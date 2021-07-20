@@ -1,0 +1,15 @@
+language: generic
+services:
+  -docker
+deploy:
+  provider: elasticbeanstalk
+  region: ap-south-1
+  app: "my-app"
+  env: "Myapp-env"
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+  bucket_name: "akshu-s3-bucket"
+  bucket_path: "docker"
+  on:
+    branch: master
+
