@@ -6,10 +6,10 @@ deploy:
   region: ap-south-1
   app: "my-app"
   env: "Myapp-env"
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
   bucket_name: "elasticbeanstalk-ap-south-1-659109727044"
   bucket_path: "docker"
   on:
     branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
 
